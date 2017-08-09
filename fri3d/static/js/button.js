@@ -3,7 +3,7 @@ function show_login_information() {
   if(name) {
     $("#user").html("<b>Aangemeld als: <tt>" + name + "</tt></b> <button onclick=\"logout();\">logout</button>");
   } else {
-    $("#user").html("Je bent niet aangemeld...");
+    $("#user").html("Je bent niet aangemeld... <button onclick=\"login();\">login</button>");
   }
 }
 
