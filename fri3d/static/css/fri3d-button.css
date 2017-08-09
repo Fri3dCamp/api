@@ -21,3 +21,7 @@ DIV.fri3d.button DIV {
   color: black;
   text-align: center;
 }
+
+DIV.fri3d.button.clickable {
+  cursor: pointer;
+}

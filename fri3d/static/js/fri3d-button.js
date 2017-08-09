@@ -51,6 +51,7 @@ function make_button(div) {
   var name = readCookie("fri3d");
   if(name) {
     $(div).click( function() { click_button($(div)) } );
+    $(div).addClass("clickable");
   }
   refresh_button($(div))
 }
