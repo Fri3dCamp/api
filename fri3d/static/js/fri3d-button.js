@@ -5,7 +5,7 @@ function refresh_button(button) {
   $.get( "/api/button?target=" + target, function( amount ) {
     $(button.find("DIV")[0]).html(amount);
   });
-  setTimeout(5000, function() { refresh_button(button); })
+  setTimeout(function() { refresh_button(button); }, 5000);
 }
 
 function click_button(button) {
