@@ -29,6 +29,7 @@ class Button(Resource):
       data = request.get_json()
       target = data["target"]
       token = request.cookies.get("fri3d")
+      assert not token is None
       # TODO map token to user
       user = token
 
