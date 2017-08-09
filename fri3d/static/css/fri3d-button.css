@@ -1,0 +1,23 @@
+DIV.fri3d.button {
+  width: 100px;
+  height: 25px;
+  background-color: #0099AD;
+  color: white;
+}
+
+DIV.fri3d.button SPAN.text {
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+DIV.fri3d.button DIV {
+  width: 25px;
+  height: 19px;
+  margin-top: 3px;
+  margin-right: 3px;
+  float: right;
+  border: none;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
