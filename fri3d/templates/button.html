@@ -1,7 +1,10 @@
 {% extends "main.html" %}
 {% block title %}Fri3d Button{% endblock %}
 {% block moreCSS %}{% endblock %}
-{% block moreJS %}{% endblock %}
+{% block moreJS %}
+  <script src="/static/js/fri3d-button.js"></script>
+  <script src="/static/js/button.js"></script>
+{% endblock %}
 
 {% block content %}
 
@@ -11,6 +14,18 @@
 
 <h2>Demo</h2>
 
-<b>TODO</b>
+<p>
+  Druk op de <tt>login</tt> knop om virtueel in te loggen (in afwachting van de
+  centrale login functionaliteit): <button onclick="login();">login</button><br>
+  <span id="user">todo</span>
+</p>
+
+<p>
+  Je kan nu "jouw" <i>like</i> aangeven door op de Fri3d Button te klikken.
+  Opnieuw klikken verwijdert jouw <i>like</i> opnieuw. Met verschillende
+  logins, kan je verschillende gebruikers simuleren.
+</p>
+
+<div class="fri3d button"></div>
 
 {% endblock %}
