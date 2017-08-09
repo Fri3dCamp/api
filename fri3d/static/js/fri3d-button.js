@@ -47,7 +47,10 @@ function make_button(div) {
   var counter = $("<div>",   { "class" : "amount" });
   $(div).append( image, text, counter );
   $(div).data("target", target);
-  $(div).click( function() { click_button($(div)) } );
+  var name = readCookie("fri3d");
+  if(name) {
+    $(div).click( function() { click_button($(div)) } );
+  }
   refresh_button($(div))
 }
 
